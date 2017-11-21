@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.randallflagg.dmellitus2_app.registro_paciente">
+
+    <RelativeLayout
+        android:layout_width="399dp"
+        android:layout_height="588dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textCapWords"
+            tools:text="Nombre" />
+
+        <EditText
+            android:id="@+id/et_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_nombre"
+            android:ems="10"
+            android:hint="Dirección"
+            android:inputType="textCapWords"
+            tools:text="Dirección" />
+
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_direccion"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            tools:text="Teléfono" />
+
+        <EditText
+            android:id="@+id/et_edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_telefono"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="number"
+            tools:text="Edad" />
+
+        <EditText
+            android:id="@+id/et_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_edad"
+            android:ems="10"
+            android:hint="Peso (kg.)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_altura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_peso"
+            android:ems="10"
+            android:hint="Altura (cm.)"
+            android:inputType="number"
+            tools:text="Altura (cm.)" />
+
+        <EditText
+            android:id="@+id/et_fdn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_altura"
+            android:ems="10"
+            android:hint="Fecha de Nacimiento (dd/mm/aaaa o dd-mm-aa)"
+            android:inputType="text"
+            tools:text="Fecha de Nacimiento (dd/mm/aaaa o dd-mm-aa)" />
+
+        <EditText
+            android:id="@+id/et_medicamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_fdn"
+            android:ems="10"
+            android:hint="Medicamento"
+            android:inputType="textPersonName"
+            tools:text="Medicamento" />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_medicamento"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            tools:text="Correo" />
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_correo"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            tools:text="Usuario" />
+
+
+        <EditText
+            android:id="@+id/et_contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            tools:text="Contraseña"
+            android:layout_above="@+id/btn_vaciar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="6dp" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="aceptar_DB"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btn_vaciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_registrar"
+            android:layout_alignLeft="@+id/btn_vaciar"
+            android:layout_alignStart="@+id/btn_vaciar"
+            android:onClick="limpiar_campos"
+            android:text="Vaciar Campos" />
+
+        <Button
+            android:id="@+id/btn_rellenar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_vaciar"
+            android:onClick="rellenar_DB"
+            android:text="Autorrellenar Campos" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

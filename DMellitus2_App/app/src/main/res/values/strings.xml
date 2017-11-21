@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DMellitus2_App</string>
+    <string-array name="tiempo">
+        <item>Antes de</item>
+        <item>Después de</item>
+    </string-array>
+    <string-array name="comida">
+        <item>Desayuno</item>
+        <item>Comida</item>
+        <item>Cena</item>
+    </string-array>
+
+</resources>
